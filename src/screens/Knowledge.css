@@ -1,0 +1,12 @@
+ .container {
+    background-color: rgb(27, 26, 26);
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat( 3, minmax(250px, 3fr) ); */
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+}

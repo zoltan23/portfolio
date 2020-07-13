@@ -8,10 +8,12 @@ export default function Navbar() {
         <>
             <Route>
                 <nav className="navbar">
-                    <ul className="navbar">
+                    <div className="navbar-left">Tim Tassin</div>
+                    <ul className="navbar-right">
                         <NavLink className="nav-item" to="/home" activeClassName="active">Home</NavLink>
                         <NavLink className="nav-item" to="/about" activeClassName="active">About</NavLink>
                         <NavLink className="nav-item" to="/projects" activeClassName="active">Projects</NavLink>
+                        <NavLink className="nav-item" to="/knowledge" activeClassName="active">Knowledge</NavLink>
                         <NavLink className="nav-item" to="/portfolio" activeClassName="active">Contact Me</NavLink>
                     </ul>
                 </nav>

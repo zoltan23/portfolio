@@ -1,0 +1,24 @@
+
+.item {
+    color: white;
+}
+
+.item h1 {
+    font-size: 25px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    margin-left: 20px;
+}
+
+.title p {
+    margin-top: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+

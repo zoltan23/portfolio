@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Full Stack Web Development",
+        "skills": [
+            "MongoDB",
+            "Express",
+            "React",
+            "Node"
+        ],
+        "icon": "faThList"
+    },
+    {
+        "title": "Database",
+        "skills": [
+            "PostgresSQL",
+            "MongoDB"
+        ],
+        "icon": "faDatabase"
+    },
+    {
+        "title": "Front End",
+        "skills": [
+            "CSS",
+            "Bootstrap",
+            "React"
+        ],
+        "icon": "faDesktop"
+    },
+    {
+        "title": "R",
+        "skills": [
+            "MongoDB",
+            "Express",
+            "React",
+            "Node"
+        ],
+        "icon": "faRProject"
+    },
+    {
+        "title": "Python",
+        "skills": [
+            "Pandas",
+            "Numpy",
+            "Scikit Learn"
+        ],
+        "icon": "faPython"
+    }
+]

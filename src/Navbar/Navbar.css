@@ -1,15 +1,21 @@
 .navbar {
     display: flex;
     font-size: 24px;
-    /* background-color: black; */
+    background-color: rgb(25, 25, 25); 
     height: 60px;
     align-items: center;
-    border-bottom: 6px solid purple;
+    border-bottom: 3px solid var(--primary-color);
     justify-content: space-between;
     width: 100%;
     color: white;
-    opacity: .8;
 }
+
+.sticky {   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+   }
 
 .navbar-left {
     padding-left: 20px;
@@ -31,7 +37,8 @@
 }
 
 .nav-item:hover {
-    color: yellow;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .active {

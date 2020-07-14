@@ -1,12 +1,33 @@
  .container {
-    background-color: rgb(27, 26, 26);
+    background-color: rgb(146, 146, 146);
     height: 100vh;
     padding-left: 20px;
+    border: orange 3px solid;
+    color: rgb(179, 133, 47);
 }
 
-.grid {
+.knowledge-grid {
     display: grid;
     /* grid-template-columns: repeat( 3, minmax(250px, 3fr) ); */
     grid-template-columns: auto auto auto;
+    column-gap: 1em;
     width: 100vw;
 }
+
+
+
+@media(max-width: 760px) {
+    .knowledge-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100vw;
+    }
+  }
+
+  @media(max-width: 476px) {
+    .knowledge-grid {
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100vw;
+    }
+  }  

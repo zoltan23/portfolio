@@ -1,0 +1,40 @@
+#about {
+    background-color: rgb(146, 146, 146);
+    margin-top: 77px;
+    height: 100vh;
+}
+
+.about-info p {
+    color: var(--primary-color);
+    font-size: var(--p-font-size);
+}
+
+.about-info p:nth-child(2) {
+    font-size: 30px;
+    color: orange;
+}
+
+
+.about-info {
+  margin-right: 30px;
+}
+
+#about h1 {
+    margin-left: 80%;
+    font-size: var(--h1-font-size);
+    padding: 10px 0px;
+    color: orange;
+}
+
+.table {
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 48%;
+}
+
+.about-table {
+    width: 30%;
+    border: 1px solid black;
+    font-size: var(--p-font-size);
+}
+

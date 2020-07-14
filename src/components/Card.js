@@ -8,7 +8,9 @@ export default function Card(props) {
                 This is a card.
                 </div>
             <div className="card-body">
-                <p>{`${props.link} ${props.description}`}</p>
+                <p>{`${props.description}`}</p>
+                <p>Url: <a href="#">{`${props.link}`}</a></p>
+                <p>Github: <a href="#">{`${props.link}`}</a></p>
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ import Contact from './screens/Contact';
 
 function App() {
   return (
-    <div className="img">
+    <div className="">
       <Navbar />
       <Home />
       <About />

@@ -1,10 +1,11 @@
 .card {
     background-color: orange;
     border-radius: 3px;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     margin: 5px;
     padding: 5px 10px 5px 10px;
+    display: grid;
 }
 
 a {
@@ -21,6 +22,8 @@ a {
 
 .card-body {
     color: yellow;
+    position: relative;
+    
 }
 
 .card-body p {
@@ -33,5 +36,13 @@ a {
 
 .card-header {
     font-size: 35px;
+}
+
+.links {
+   align-self: end;
+}
+
+.links p {
+margin: 5px;
 }
  

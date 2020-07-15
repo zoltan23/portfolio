@@ -7,13 +7,13 @@ export default function Projects() {
     console.log('data', data)
     return (
         <section id="projects">
-            <div>
+            
             <h1>Projects</h1>
-            </div>
+            
             <div className="projects-grid">
                 {
                     data.map(item => (
-                        <Card link={item.link} description={item.description} />
+                        <Card title={item.title} url={item.url} description={item.description} github={item.github} />
                     ))}
             </div>
         </section>

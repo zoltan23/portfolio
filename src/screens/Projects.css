@@ -1,5 +1,6 @@
-#projects {
+ #projects {
     background: var(--primary-color);
+    height: 100vh;
 }
 
 .projects-grid {
@@ -19,6 +20,10 @@
 }
 
 @media (max-width: 576px) {
+    #projects {
+        background: var(--primary-color);
+        height: 100%;
+    }
     .projects-grid {
         width: 100%;
         display: grid;

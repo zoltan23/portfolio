@@ -1,8 +1,59 @@
-#about {
+  #about-grid {
+      display: grid;
+      height: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .3fr 3fr 1fr;
+      grid-template-areas: 
+        "header header"
+        "content1 content2"
+        "footer footer"
+      ;
+  }
+
+  #about-header {
+      background-color: rosybrown;
+      grid-area: header;
+  }
+
+  #about-content1 {
+      background-color: silver;
+      grid-area: content1;
+  }
+
+  #about-content2 {
+      background-color: tan;
+      grid-area: content2;
+  }
+
+  #about-footer {
+      background-color: thistle;
+      grid-area: footer;
+  }
+
+  /* Mobile */
+
+  @media only screen and (max-width: 550px){
+    #about-grid {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-areas: 
+          "header"
+          "content1"
+          "content2"
+          "footer"
+        ;
+    }
+  }
+  
+  /* #about {
     background-color: rgb(146, 146, 146);
     margin-top: 77px;
     height: 100vh;
-}
+    background: url('../assets/images/trumpet3.jpg') no-repeat center center/cover;
+    width: 100%;
+} 
 
 .about-info p {
     color: var(--primary-color);
@@ -13,7 +64,6 @@
     font-size: 30px;
     color: orange;
 }
-
 
 .about-info {
   margin-right: 30px;
@@ -37,4 +87,4 @@
     border: 1px solid black;
     font-size: var(--p-font-size);
 }
-
+ */

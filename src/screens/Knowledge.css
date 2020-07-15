@@ -1,20 +1,32 @@
- .container {
+.knowledge-container {
     background-color: rgb(146, 146, 146);
-    height: 100vh;
     padding-left: 20px;
-    border: orange 3px solid;
-    color: rgb(179, 133, 47);
+    border: orange 1px solid;
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 3fr;
+    grid-template-areas:
+    "header"
+    "content"
+    ; 
+    width: 100%;
+    height: 100vh;
+}
+
+#knowledge-header  {
+    height: 60px;
+    grid-area: header;
 }
 
 .knowledge-grid {
     display: grid;
-    /* grid-template-columns: repeat( 3, minmax(250px, 3fr) ); */
+    grid-template-columns: repeat( 3, minmax(250px, 3fr) ); 
     grid-template-columns: auto auto auto;
     column-gap: 1em;
     width: 100vw;
+    grid-area: content;
 }
-
-
 
 @media(max-width: 760px) {
     .knowledge-grid {

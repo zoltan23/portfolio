@@ -1,26 +1,38 @@
 [
     {
-        "link": "link1",
-        "description": "This is description 1. This is description 1. This is description 1. This is description 1. This is description 1. This is description 1."
+        "title": "Audio Classification",
+        "description": "Desc",
+        "url": "url1",
+        "github": "https://github.com/zoltan23/Audio-Classification"
     },
     {
-        "link": "link2",
-        "description": "This is description 2. This is description 2. This is description 2. This is description 2."
+        "title": "Sentiment Analysis",
+        "description": "This app will take user a input from a user and classify it as a positive or negative review",
+        "url": "",
+        "github": ""
     },
     {
-        "link": "link3",
-        "description": "This is description 3."
+        "title": "College Football Recruiting Analysis",
+        "description": "This is description 3.",
+        "url": "",
+        "github": "https://github.com/zoltan23/R"
     },
     {
-        "link": "link4",
-        "description": "This is description 4."
+        "title": "Title 4",
+        "description": "This is description 4.",
+        "url": "",
+        "github": ""
     },
     {
-        "link": "link5",
-        "description": "This is description 5."
+        "title": "Title 5",
+        "description": "This is description 5.",
+        "url": "",
+        "github": ""
     },
     {
-        "link": "link6",
-        "description": "This is description 6."
+        "title": "Title 6",
+        "description": "This is description 6.",
+        "url": "",
+        "github": ""
     }
 ]

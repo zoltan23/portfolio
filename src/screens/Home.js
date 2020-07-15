@@ -3,7 +3,7 @@ import './Home.css'
 
 export default function Home() {
     return (
-        <div className="center">
+        <div id="home" className="center img">
             <p>
                 Welcome!  My name is <br />
                 <span>Tim Tassin</span><br />

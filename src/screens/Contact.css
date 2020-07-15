@@ -1,11 +1,52 @@
- /* #contact {
-    border: orange 0.0001px solid;
-}  */
+.contact-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr 3fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "content1 content2"
+      "footer footer"
+    ;
+}
 
-.column-1 {
+#contact-header {
+    grid-area: header;
+}
+
+#contact-content1 {
+    grid-area: content1;
     color: #fff;
     padding-left: 20px;
     padding-right: 25px;
+    position: relative;
+    padding: 30px;
+}
+
+#contact-content1 h1 {
+    margin-bottom: 15px;
+}
+
+#contact-content1 h2 {
+    margin-bottom: 10px;
+}
+
+#contact-content1 p {
+    color: var(--color1);
+}
+
+#contact-content1 .contact-icons {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+#contact-content2 {
+    grid-area: content2;
+}
+
+#contact-footer {
+    grid-area: footer;
 }
 
 input {
@@ -15,7 +56,7 @@ input {
     display: block;
     border: 0px;
     outline: 0px;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--color1);
     border-radius: 4px;
     box-sizing: border-box;
     background: transparent;
@@ -26,32 +67,6 @@ input:last-of-type {
     margin-top: 30px;
 }
 
-.flex-columns.flex-reverse .row {
-    flex-direction: row-reverse;
-}
-
-.flex-columns .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.flex-columns .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.flex-columns .column-2 {
-    /* border: black 3px solid; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 30px;
-}
 
 form {
     width: 100%;
@@ -87,17 +102,28 @@ form {
     margin-top: 15px;
 } 
 
-.row > h1 {
-    margin-left: 75%;
-    color: orange;
-}
-
 .column-1 h1 {
     color: #fff;
 }
 
 .contact-icons a {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 35px;
     color: tan;
+    padding: 10px;
 }
+
+/* Mobile */
+@media only screen and (max-width: 550px){
+    .contact-grid {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-areas: 
+          "header"
+          "content1"
+          "content2"
+          "footer"
+        ;
+    }
+  }

@@ -29,8 +29,8 @@ export default function InfoCard({ icon, title, skills }) {
         }        
 
     return (
-        <div className="item">
-            <div className="title">
+        <div className="info-card">
+            <div className="info-card-title">
                 <h1>{fontAwesomeIcon} {title}</h1>
             </div>
             <hr></hr>

@@ -1,13 +1,12 @@
 .center {
     display: flex;
-    margin: 20px;
     align-items: center;
-    height: 90vh;  
     width: 100%;
   }
 
 .center p {
   font-size: 35px;
+  color: var(--color4);
 }
 
 span {

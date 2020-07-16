@@ -7,9 +7,7 @@ export default function Projects() {
     console.log('data', data)
     return (
         <section id="projects">
-            
             <h1>Projects</h1>
-            
             <div className="projects-grid">
                 {
                     data.map(item => (

@@ -1,11 +1,18 @@
-/* 
+
 .info-card {
     color: white;
+    padding: var(--padding-left);
+    /* width: 24rem; */
 }
 
 .info-card h1 {
     font-size: 25px;
     color: var(--primary-color);
+}
+
+.info-card-title {
+    padding-bottom: 5px;
+    color: var(--color1);
 }
 
 .title {
@@ -23,7 +30,7 @@
     padding-bottom: 90px;
 }
 
-/* hr {
+ hr {
     position: relative;
     border:solid 1px black; 
     margin-right: 15%;
@@ -33,4 +40,13 @@
 .info-card li {
     font-size: var(--p-font-size);
     color: #FEF97C;
-} */
+}
+
+ul {
+    border-top: var(--color2) 3px solid;
+    padding: 20px;
+}
+
+li {
+    /* padding-left: 15px; */
+}

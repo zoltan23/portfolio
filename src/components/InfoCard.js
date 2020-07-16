@@ -33,7 +33,7 @@ export default function InfoCard({ icon, title, skills }) {
             <div className="info-card-title">
                 <h1>{fontAwesomeIcon} {title}</h1>
             </div>
-            <hr></hr>
+            {/* <hr></hr> */}
             <ul>
                 {
                     Object.keys(skills).map(key => (

@@ -1,14 +1,26 @@
  #projects {
-    background: var(--primary-color);
+    background: var(--color3);
     height: 100vh;
+    padding: 20px;
+}
+
+#projects h1 {
+    color: var(--color1);
+    float: right;
+    padding: 30px;
+    font-size: 50px;
+}
+
+#projects p {
+    color: var(--color4);
 }
 
 .projects-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 0em;
-    grid-column-gap: 2em;
+    grid-column-gap: 1em;
 }
 
 @media (max-width: 760px) {

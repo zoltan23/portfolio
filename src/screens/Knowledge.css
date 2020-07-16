@@ -17,14 +17,16 @@
 #knowledge-header  {
     height: 60px;
     grid-area: header;
+    color: var(--color4);
+    padding: 20px;
+    float: right;
 }
 
 .knowledge-grid {
     display: grid;
-    grid-template-columns: repeat( 3, minmax(250px, 3fr) ); 
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) ); 
     grid-template-columns: auto auto auto;
-    column-gap: 1em;
-    width: 100vw;
+    column-gap: 2em;
     grid-area: content;
 }
 

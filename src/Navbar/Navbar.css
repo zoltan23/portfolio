@@ -4,7 +4,7 @@
     background-color: rgb(25, 25, 25); 
     height: 60px;
     align-items: center;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--color1);
     justify-content: space-between;
     width: 100%;
     color: white;
@@ -18,7 +18,8 @@
    }
 
 .navbar-left {
-    padding-left: 20px;
+    padding-left: var(--padding-left);
+    color: var(--color1)
 }
 
 .navbar-right {
@@ -33,17 +34,20 @@
     padding: 0px 20px;
     margin: 0 0px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--color1);
 }
 
 .nav-item:hover {
-    color: var(--primary-color);
+    color: var(--color3);
     font-weight: 500;
+    text-decoration: underline;
 }
 
+ 
 .active {
-    color: yellow;
-} 
+    color:red !important;
+}
+ 
 
 /* Tablet */
 @media(max-width: 768px) {

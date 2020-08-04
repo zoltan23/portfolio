@@ -1,18 +1,9 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;  
+  font-family: 'Dosis', Helvetica, sans-serif;  
   padding: 0px;
   margin: 0px;
 }
 
-/* :root {
-  --p-font-size: 20px;
-  --h1-font-size: 35px;
-  --color1: #3FEEE6;
-  --color2: orange;
-  --color3: orange;
-  --color4: orange;
-  --color5: orange;
-} */
 :root {
   --p-font-size: 20px;
   --h1-font-size: 35px;

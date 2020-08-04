@@ -18,7 +18,7 @@
     height: 60px;
     grid-area: header;
     color: var(--color4);
-    padding: 20px;
+    padding: 0px;
     float: right;
 }
 

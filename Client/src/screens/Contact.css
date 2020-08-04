@@ -12,6 +12,13 @@
 
 #contact-header {
     grid-area: header;
+    padding: 30px;
+    color: var(--color1);
+}
+
+#contact-header h1 {
+    float: right;
+    padding: 15px;
 }
 
 #contact-content1 {
@@ -43,6 +50,7 @@
 
 #contact-content2 {
     grid-area: content2;
+    padding-right: 30px;
 }
 
 #contact-footer {

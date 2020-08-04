@@ -18,7 +18,7 @@ a {
 }
 
 .card:hover {
-    background-color: rgb(54, 54, 51); 
+    background-color: rgb(235, 235, 223); 
 }
 
 .card:hover a .card-body {

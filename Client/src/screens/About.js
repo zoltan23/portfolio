@@ -27,7 +27,7 @@ export default function About() {
                             </tr>
                             <tr>
                                 <td>Github:</td>
-                                <td><a href="#">my Github</a></td>
+                                <td><a href="https://github.com/zoltan23">https://github.com/zoltan23</a></td>
                             </tr>
                         </tbody>
                     </table>

@@ -1,3 +1,10 @@
+#about {
+  background-color: rgb(146, 146, 146);
+  height: 100vh;
+  background: url('../assets/images/trumpet.jpg') no-repeat center center/cover;
+  width: 100%;
+} 
+
 #about-grid {
       display: grid;
       height: 100vh;
@@ -11,9 +18,7 @@
   }
 
 #about-header {
-      /* background-color: rosybrown; */
       grid-area: header;
-      /* padding: var(--padding-left); */
       color: var(--color3);
   }
 
@@ -37,6 +42,7 @@
     grid-area: footer;
     padding: var(--padding-left);
     padding-right: 15%;
+    padding-bottom: 65px;
   }
 
 table {
@@ -44,9 +50,16 @@ table {
     height: 100%; 
 }
 
+table td {
+  padding-left: 10px;
+}
+
+table td a {
+  color: var(--color2);
+}
+
 .about-table {
     width: 30%;
-    /* border: 1px solid black; */
     font-size: var(--p-font-size);
     color: var(--color3);
     font-size: 25px;
@@ -68,9 +81,3 @@ table {
 }
 }
   
-   #about {
-    background-color: rgb(146, 146, 146);
-    height: 100vh;
-    background: url('../assets/images/trumpet.jpg') no-repeat center center/cover;
-    width: 100%;
-} 

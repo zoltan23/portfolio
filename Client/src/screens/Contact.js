@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import axios from 'axios'
@@ -6,12 +6,19 @@ import './Contact.css'
 
 export default function Contact() {
 
+
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
     subject: "",
     message: ""
   })
+  const [isDisabled, setIsDisabled] = useState(true)
+
+  useEffect(() => {
+    const isUser = Object.values(userInfo).every(el => Boolean(el))
+    isUser ? setIsDisabled(false) : setIsDisabled(true)
+  }, [userInfo])
 
   const handleOnChange = (e) => {
     const { target: { name, value, id } } = e
@@ -20,15 +27,20 @@ export default function Contact() {
   }
 
   const handleSubmit = (e) => {
-    axios({
-      method: 'POST',
-      url:"http://localhost:3002/send",
-      data: userInfo
-    }).then(res => {
-      console.log('res.data.success', res.data.success)
-    })
+    e.preventDefault()
+    // axios({
+    //   method: 'POST',
+    //   url: "http://localhost:3002/send",
+    //   data: userInfo
+    // }).then(res => {
+    //   console.log('res.data.success', res.data.success)
+    // })
+    console.log('submit fired!!!')
   }
 
+  const validate = () => {
+
+  }
 
   return (
     <section id="contact" className="contact-grid contact-img">
@@ -53,7 +65,7 @@ export default function Contact() {
           <input id="email" name="email" type="email" placeholder="Email*" onChange={handleOnChange} />
           <input type="text" name="subject" placeholder="Subject" onChange={handleOnChange} />
           <input type="text" name="message" placeholder="Message" onChange={handleOnChange} />
-          <button className="btn" onClick={handleSubmit}>Send Message</button>
+          <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
       </div>
       <footer id="contact-footer">This is the footer</footer>

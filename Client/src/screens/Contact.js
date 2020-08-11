@@ -68,7 +68,7 @@ export default function Contact() {
           <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
       </div>
-      <footer id="contact-footer">This is the footer</footer>
+      {/* <footer id="contact-footer">This is the footer</footer> */}
     </section >
   )
 }

@@ -18,7 +18,7 @@
    }
 
 .navbar-left {
-    padding-left: var(--padding-left);
+    padding-left: 20px;
     color: var(--color1)
 }
 
@@ -40,12 +40,9 @@
 .nav-item:hover {
     color: var(--color3);
     font-weight: 500;
-    text-decoration: underline;
+    border-bottom: 2px solid var(--color3);
+    transition-property: color border-bottom;
+    transition-duration: .5s;
 } 
- 
- .nav-item > .active {
-    color:red !important;
-    font-size: 50px;
-    border-bottom: 10px solid red;
-}
- 
+
+

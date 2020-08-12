@@ -1,10 +1,9 @@
 import React from 'react'
+import { Element } from "react-scroll";
 import './Test.css'
 
 export default function Test() {
     return (
-        <div className="test">
-            Test
-        </div>
-    )
+<Element name="test" >Test</Element>    
+)
 }

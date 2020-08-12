@@ -44,4 +44,8 @@ p {
   font-size: var(--p-font-size);
 }
 
-
+.active {
+  color: var(--color3);
+  font-size: 28px;
+  border-bottom: var(--color3) 2px solid;
+}

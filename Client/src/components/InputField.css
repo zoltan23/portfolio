@@ -1,0 +1,15 @@
+.is-valid {
+    border: green 2px solid;
+}
+
+.is-invalid {
+    border: red 2px solid;
+}
+
+.valid-feedback {
+    color: var(--color1);
+}
+
+.invalid-feedback {
+    color: red;
+}

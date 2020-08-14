@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import axios from 'axios'
 import './Contact.css'
+import InputField from '../components/InputField'
 
 export default function Contact() {
 
@@ -14,10 +15,10 @@ export default function Contact() {
   })
 
   const [valClass, setValClass] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
+    name: "name",
+    email: "email",
+    subject: "subject",
+    message: "message"
   })
 
   const [isDisabled, setIsDisabled] = useState(true)
@@ -25,15 +26,24 @@ export default function Contact() {
   useEffect(() => {
     const isUser = Object.values(userInfo).every(el => Boolean(el))
     isUser ? setIsDisabled(false) : setIsDisabled(true)
+
+    //Object.entries(valClass).map(([key, value]) => setValClass(prevState => ({...prevState, [key]: value})))
+    //console.log('valClass', valClass)
   }, [userInfo])
 
-  const handleOnChange = (e) => {
-    const { target: { name, value, className } } = e
-    console.log('className', e.target.className)
-    setUserInfo(prevState => ({ ...prevState, [name]: value }))
-    setValClass(prevState => ({ ...prevState, [name]: "input-val" }))
-    console.log('valClass', valClass)
+  // const handleOnChange = (e) => {
+  //   const { target: { name, value } } = e
+
+  //   setUserInfo(prevState => ({ ...prevState, [name]: value }))
+
+
+  // }
+
+  function handleOnChange(input, name) {
+    setUserInfo(prevState => ({ ...prevState, [name]: input }))
+    console.log('signup', userInfo)
   }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     // axios({
@@ -44,10 +54,6 @@ export default function Contact() {
     //   console.log('res.data.success', res.data.success)
     // })
     console.log('submit fired!!!')
-  }
-
-  const validate = () => {
-
   }
 
   return (
@@ -69,10 +75,10 @@ export default function Contact() {
       </div>
       <div id="contact-content2">
         <form >
-          <input id="name" name="name" className={valClass.name} type="text" placeholder="Name*" onChange={handleOnChange} />
-          <input id="email" name="email" className={valClass.email} type="email" placeholder="Email*" onChange={handleOnChange} />
-          <input type="text" name="subject" className={valClass.subject} placeholder="Subject" onChange={handleOnChange} />
-          <input type="text" name="message" className={valClass.message} placeholder="Message" onChange={handleOnChange} />
+          <InputField id="name" name="name" type="text" placeholder="Name" onUpdateInput={handleOnChange} />
+          <InputField id="email" name="email" type="email" placeholder="Email" onUpdateInput={handleOnChange} />
+          <InputField id="subject" name="subject" type="text" placeholder="Subject" onUpdateInput={handleOnChange} />
+          <InputField id="message" name="message" type="text" placeholder="Message" onUpdateInput={handleOnChange} />
           <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
       </div>

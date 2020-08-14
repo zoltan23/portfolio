@@ -71,6 +71,10 @@ input {
     color: var(--color3)
   }
 
+ .input-val {
+     border: green 2px solid;
+ } 
+
 input:last-of-type {
     margin-top: 30px;
 }

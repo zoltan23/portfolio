@@ -6,13 +6,20 @@ import './Contact.css'
 
 export default function Contact() {
 
-
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
     subject: "",
     message: ""
   })
+
+  const [valClass, setValClass] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  })
+
   const [isDisabled, setIsDisabled] = useState(true)
 
   useEffect(() => {
@@ -21,11 +28,12 @@ export default function Contact() {
   }, [userInfo])
 
   const handleOnChange = (e) => {
-    const { target: { name, value, id } } = e
+    const { target: { name, value, className } } = e
+    console.log('className', e.target.className)
     setUserInfo(prevState => ({ ...prevState, [name]: value }))
-    console.log('signup', userInfo)
+    setValClass(prevState => ({ ...prevState, [name]: "input-val" }))
+    console.log('valClass', valClass)
   }
-
   const handleSubmit = (e) => {
     e.preventDefault()
     // axios({
@@ -61,10 +69,10 @@ export default function Contact() {
       </div>
       <div id="contact-content2">
         <form >
-          <input id="name" name="name" type="text" placeholder="Name*" onChange={handleOnChange} />
-          <input id="email" name="email" type="email" placeholder="Email*" onChange={handleOnChange} />
-          <input type="text" name="subject" placeholder="Subject" onChange={handleOnChange} />
-          <input type="text" name="message" placeholder="Message" onChange={handleOnChange} />
+          <input id="name" name="name" className={valClass.name} type="text" placeholder="Name*" onChange={handleOnChange} />
+          <input id="email" name="email" className={valClass.email} type="email" placeholder="Email*" onChange={handleOnChange} />
+          <input type="text" name="subject" className={valClass.subject} placeholder="Subject" onChange={handleOnChange} />
+          <input type="text" name="message" className={valClass.message} placeholder="Message" onChange={handleOnChange} />
           <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
       </div>

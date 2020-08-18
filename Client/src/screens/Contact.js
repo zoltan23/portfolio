@@ -4,6 +4,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import axios from 'axios'
 import './Contact.css'
 import InputField from '../components/InputField'
+import Modal from '../components/Modal'
 
 export default function Contact() {
 
@@ -14,30 +15,21 @@ export default function Contact() {
     message: ""
   })
 
-  const [valClass, setValClass] = useState({
-    name: "name",
-    email: "email",
-    subject: "subject",
-    message: "message"
-  })
+  const modalRef = React.useRef();    
+
+  const openModal = () => {
+    modalRef.current.openModal()
+}
+  const closeModal = () => {
+    modalRef.current.closeModal()
+}
 
   const [isDisabled, setIsDisabled] = useState(true)
 
   useEffect(() => {
     const isUser = Object.values(userInfo).every(el => Boolean(el))
     isUser ? setIsDisabled(false) : setIsDisabled(true)
-
-    //Object.entries(valClass).map(([key, value]) => setValClass(prevState => ({...prevState, [key]: value})))
-    //console.log('valClass', valClass)
   }, [userInfo])
-
-  // const handleOnChange = (e) => {
-  //   const { target: { name, value } } = e
-
-  //   setUserInfo(prevState => ({ ...prevState, [name]: value }))
-
-
-  // }
 
   function handleOnChange(input, name) {
     setUserInfo(prevState => ({ ...prevState, [name]: input }))
@@ -53,6 +45,7 @@ export default function Contact() {
     // }).then(res => {
     //   console.log('res.data.success', res.data.success)
     // })
+    openModal()
     console.log('submit fired!!!')
   }
 
@@ -81,6 +74,11 @@ export default function Contact() {
           <InputField id="message" name="message" type="text" placeholder="Message" onUpdateInput={handleOnChange} />
           <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
+        <Modal ref={modalRef}>
+               <h1>Modal Header</h1>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quia placeat commodi libero tenetur ipsam itaque recusandae omnis rerum praesentium ducimus sed laborum, minima, exercitationem ullam facilis alias ut. Voluptates?</p>
+               <button className=".btn" onClick={closeModal}>Close Modal</button>
+        </Modal>
       </div>
       {/* <footer id="contact-footer">This is the footer</footer> */}
     </section >

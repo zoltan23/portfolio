@@ -40,9 +40,26 @@
 .nav-item:hover {
     color: var(--color3);
     font-weight: 500;
-    border-bottom: 2px solid var(--color3);
+    border-bottom: 3px solid var(--color3);
     transition-property: color border-bottom;
-    transition-duration: .5s;
+    transition-duration: .6s;
+    cursor: pointer;
 } 
+
+@media only screen and (max-width: 550px){
+
+.navbar ul {
+    display: flex;
+    border: dimgrey 3px solid;
+}
+
+.nav-item {
+    padding: 15px;
+    }
+
+.nav-item {
+    color: ;
+}
+}
 
 

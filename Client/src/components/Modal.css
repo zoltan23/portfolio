@@ -22,13 +22,43 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
+  max-height: 40%;
   width: 60%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   z-index: 300;
   padding: 40px;
+}
 
+.modal-cancel {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(223, 63, 63);
+  margin: auto;
+  cursor: pointer;
+}
+
+.modal-cancel:before, .modal-cancel:after {
+  content: '';
+  width: 110%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white;
+}
+
+.modal-cancel:before {
+  -webkit-transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.modal-cancel:after {
+  -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 .modal-box p {

@@ -13,7 +13,7 @@ export default function InputField({ name, type, placeholder, value, onUpdateInp
         if (e.target.value.length > 0) {
             setTimeout(() => {
                 setIsInputValid(null)
-            }, 4000)
+            }, 3000)
         }
     }
 

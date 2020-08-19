@@ -4,12 +4,13 @@ import './About.css'
 export default function About() {
     return (
         <section id="about" className="img">
+            <div className="container">
             <div id="about-grid">
                 <div id="about-header"><h1>About Me</h1></div>
-                <div className="content1">
+                <div id="about-content1">
                     Picture goes here!!!
                 </div>
-                <div id="content2">
+                <div id="about-content2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
@@ -32,6 +33,7 @@ export default function About() {
                         </tbody>
                     </table>
                 </footer>
+            </div>
             </div>
         </section>
     )

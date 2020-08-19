@@ -18,13 +18,11 @@ export default function Contact() {
   const modalRef = React.useRef();    
 
   const openModal = () => {
+    console.log('modalRef', modalRef)
     modalRef.current.openModal()
 }
-  const closeModal = () => {
-    modalRef.current.closeModal()
-}
 
-  const [isDisabled, setIsDisabled] = useState(true)
+  const [isDisabled, setIsDisabled] = useState(false)
 
   useEffect(() => {
     const isUser = Object.values(userInfo).every(el => Boolean(el))
@@ -50,7 +48,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="contact-grid contact-img">
+    <section id="contact" className="contact-img">
       <div id="contact-header"><h1>Contact Me!</h1></div>
       <div id="contact-content1">
         <h1>Tim Tassin</h1>
@@ -77,7 +75,6 @@ export default function Contact() {
         <Modal ref={modalRef}>
                <h1>Modal Header</h1>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quia placeat commodi libero tenetur ipsam itaque recusandae omnis rerum praesentium ducimus sed laborum, minima, exercitationem ullam facilis alias ut. Voluptates?</p>
-               <button className=".btn" onClick={closeModal}>Close Modal</button>
         </Modal>
       </div>
       {/* <footer id="contact-footer">This is the footer</footer> */}

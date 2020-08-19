@@ -2,18 +2,17 @@
   background-color: rgb(146, 146, 146);
   height: 100vh;
   background: url('../assets/images/trumpet.jpg') no-repeat center center/cover; 
-  width: 100%;
 } 
 
 #about-grid {
       display: grid;
-      height: 100vh;
+      height: 90vh;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: .3fr 3fr 1fr;
+      grid-template-rows: .3fr 3fr .7fr;
       grid-template-areas: 
         "header header"
         "content1 content2"
-        "footer footer"
+        ". footer"
       ;
   }
 
@@ -27,16 +26,25 @@
     padding: 40px;
 }
 
+#about-content1 {
+  border: deeppink 2px solid;
+  height: 300px;
+}
+
+#about-content2 {
+  border: deeppink 2px solid;
+  height: 300px;
+}
+
 #about-footer {
-    background-color: rgba(100, 94, 100, .5);
-    grid-area: footer;
-    padding: var(--padding-left);
-    padding-right: 15%;
-    padding-bottom: 65px;
-  }
+  background-color: rgba(100, 94, 100, .5);
+  grid-area: footer;
+  padding: var(--padding-left);
+  padding-right: 15%;
+  float: right;
+}
 
 table {
-    float: right;
     height: 100%; 
 }
 
@@ -48,6 +56,10 @@ table td a {
   color: var(--color2);
 }
 
+table td a:hover {
+  color: rgb(233, 230, 53);
+} 
+
 .about-table {
     width: 30%;
     font-size: var(--p-font-size);
@@ -55,8 +67,12 @@ table td a {
     font-size: 25px;
 } 
 
-/* Mobile */
+
 @media only screen and (max-width: 550px){
+#about {
+  padding-left: 15px;
+} 
+
 #about-grid {
     display: grid;
     height: 100%;
@@ -69,5 +85,12 @@ table td a {
         "footer"
     ;
 }
+.about-table {
+  padding-top: 10px;
+  width: 30%;
+  font-size: var(--p-font-size);
+  color: var(--color3);
+  font-size: 20px;
+} 
 }
   

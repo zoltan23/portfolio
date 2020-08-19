@@ -26,6 +26,9 @@ const Modal = forwardRef((props, ref) => {
             <div className="modal-wrapper">
                 <div className="modal-backdrop" onClick={close} />
                 <div className="modal-box">
+                    <div className="modal-exit">
+                        <div className="modal-cancel" onClick={close}></div>
+                    </div>
                     {props.children}
                 </div>
             </div>, document.getElementById('modal-root'))

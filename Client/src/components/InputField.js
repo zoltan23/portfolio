@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState, useImperativeHandle } from 'react'
 import styled from 'styled-components'
 import './InputField.css'
 
-export default function InputField({ name, type, placeholder, value, onUpdateInput }) {
+export default function InputField({name, type, placeholder, value, onUpdateInput }) {
 
     const [isInputValid, setIsInputValid] = useState(null)
-
+    const inputRef = React.useRef();
+         
     const getInput = (e) => {
         onUpdateInput(e.target.value, name)
         e.target.value.length > 0 ? setIsInputValid(true) : setIsInputValid(false)
@@ -16,6 +17,12 @@ export default function InputField({ name, type, placeholder, value, onUpdateInp
             }, 3000)
         }
     }
+
+    useEffect(() => {
+         console.log('[inputField] inputRef', inputRef.current.value)
+    }, [isInputValid])
+
+  
 
     const getValidString = (stateBool) => {
 
@@ -39,7 +46,7 @@ export default function InputField({ name, type, placeholder, value, onUpdateInp
 
     return (
         <div>
-            <input type={type} name={name} value={value} className={getValidString(isInputValid)} placeholder={placeholder} onChange={getInput} />
+            <input ref={inputRef} type={type} name={name} value={value} className={getValidString(isInputValid)} placeholder={placeholder} onChange={getInput} />
             {feedback}
         </div>
     )

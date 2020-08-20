@@ -15,12 +15,13 @@ export default function Contact() {
     message: ""
   })
 
-  const modalRef = React.useRef();    
+  const modalRef = React.useRef();
+
 
   const openModal = () => {
     console.log('modalRef', modalRef)
     modalRef.current.openModal()
-}
+  }
 
   const [isDisabled, setIsDisabled] = useState(false)
 
@@ -48,16 +49,13 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="contact-img">
+    <section id="contact" className="contact-img container">
       <div id="contact-header"><h1>Contact Me!</h1></div>
       <div id="contact-content1">
         <h1>Tim Tassin</h1>
         <h2>We provide bespoke solutions</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-          illum, animi earum ea amet sequi reiciendis sit corporis sunt
-          iusto cupiditate odio maxime adipisci cumque eligendi nemo
-          dolore id itaque?
+          Please feel free to contact me.  I would love to discuss ....
         </p>
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/timothy-tassin/"><FontAwesomeIcon icon={faLinkedin} /></a>
@@ -73,11 +71,12 @@ export default function Contact() {
           <button type="button" className={isDisabled ? "btn disabled" : "btn"} disabled={isDisabled} onClick={handleSubmit}>Send Message</button>
         </form>
         <Modal ref={modalRef}>
-               <h1>Modal Header</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quia placeat commodi libero tenetur ipsam itaque recusandae omnis rerum praesentium ducimus sed laborum, minima, exercitationem ullam facilis alias ut. Voluptates?</p>
+          <h1>Modal Header</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quia placeat commodi libero tenetur ipsam itaque recusandae omnis rerum praesentium ducimus sed laborum, minima, exercitationem ullam facilis alias ut. Voluptates?</p>
         </Modal>
       </div>
-      {/* <footer id="contact-footer">This is the footer</footer> */}
+      <footer id="contact-footer">
+       </footer>
     </section >
   )
 }

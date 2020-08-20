@@ -31,6 +31,12 @@
   height: 300px;
 }
 
+#about-content2 p {
+  line-height: 1.45;
+  padding: .8rem;
+  font-size: 22px;
+}
+
 #about-content2 {
   border: deeppink 2px solid;
   height: 300px;

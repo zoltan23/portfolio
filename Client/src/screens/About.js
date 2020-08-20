@@ -11,9 +11,9 @@ export default function About() {
                     Picture goes here!!!
                 </div>
                 <div id="about-content2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus tenetur quae perferendis quos corrupti.</p>
+                    <p>I am currently a private tutor that specializes in mathematics and statistics.  I am currently working diligently to transition careers to a data scientist/analyst or software engineer.  </p>
+                    <p>I am looking for an opportunity to become a part of a team and develope professionally.  </p>
+                    <p>In my spare time, I love to play guitar, trumpet and expand my programming skills to help me reach my goal of being a successful data scientist.</p>
                 </div>
                 <footer id="about-footer">
                     <table className="about-table">

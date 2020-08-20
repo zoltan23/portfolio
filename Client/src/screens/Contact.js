@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import axios from 'axios'
+import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '../../node_modules/@fortawesome/free-brands-svg-icons'
+import axios from '../../node_modules/axios'
 import './Contact.css'
 import InputField from '../components/InputField'
 import Modal from '../components/Modal'
@@ -37,13 +37,13 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // axios({
-    //   method: 'POST',
-    //   url: "http://localhost:3002/send",
-    //   data: userInfo
-    // }).then(res => {
-    //   console.log('res.data.success', res.data.success)
-    // })
+    axios({
+      method: 'POST',
+      url: "http://localhost:3002/send",
+      data: userInfo
+    }).then(res => {
+      console.log('res.data.success', res.data.success)
+    })
     openModal()
     console.log('submit fired!!!')
   }

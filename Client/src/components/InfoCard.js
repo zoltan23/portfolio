@@ -1,7 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRProject, faPython,  } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase, faThList, faDesktop } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome'
+import { faRProject, faPython,  } from '../../node_modules/@fortawesome/free-brands-svg-icons'
+import { faDatabase, faThList, faDesktop } from '../../node_modules/@fortawesome/free-solid-svg-icons'
 import './InfoCard.css'
 
 export default function InfoCard({ icon, title, skills }) {

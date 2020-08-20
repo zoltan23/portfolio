@@ -1,4 +1,4 @@
 Client/node_modules
 node_modules
 todos.txt
-config.js
+.env

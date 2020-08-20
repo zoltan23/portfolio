@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState, useImperativeHandle } from 'react'
-import styled from 'styled-components'
+import React, { useEffect, useState} from 'react'
 import './InputField.css'
 
 export default function InputField({name, type, placeholder, value, onUpdateInput }) {

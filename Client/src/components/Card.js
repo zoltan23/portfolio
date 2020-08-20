@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome'
+import { faGithub } from '../../node_modules/@fortawesome/free-brands-svg-icons'
 import './Card.css';
 
 export default function Card({ title, description, github, url }) {

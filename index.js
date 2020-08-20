@@ -54,13 +54,14 @@ router.post('/send', (req, res, next) => {
 })
 
 const app = express()
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
 app.use(express.static(path.join(__dirname, 'client/build')))
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+
 app.listen(process.env.PORT || 3002, process.env.IP, function(){
   console.log(`The server is running on port ${process.env.PORT}`)
 })

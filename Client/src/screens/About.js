@@ -11,7 +11,7 @@ export default function About() {
                     Picture goes here!!!
                 </div>
                 <div id="about-content2">
-                    <p>I am currently a private tutor that specializes in mathematics and statistics.  I am currently working diligently to transition careers to a data scientist/analyst or software engineer.  </p>
+                    <p>I am currently a private tutor that specializes in mathematics and statistics.  I am currently working diligently to transition careers to a data scientist/analyst or software engineer.</p>
                     <p>I am looking for an opportunity to become a part of a team and develope professionally.  </p>
                     <p>In my spare time, I love to play guitar, trumpet and expand my programming skills to help me reach my goal of being a successful data scientist.</p>
                 </div>

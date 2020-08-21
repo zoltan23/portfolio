@@ -1,0 +1,10 @@
+.typewriter {
+    font-size: 25px;
+}
+
+.cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    animation: 1s blink step-end infinite;
+}

@@ -6,11 +6,13 @@ const path = require('path')
 const dotenv = require('dotenv');
 dotenv.config();
 
+process.env.USER = 'timothy_tassin@hotmail.com'
+
 var transport = {
     host: 'smtp.live.com',
     port: 587,
     auth: {
-      user: process.env.USER1,
+      user: process.env.USER,
       pass: process.env.PASS
     }
   }
@@ -34,7 +36,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: process.env.USER1,
+    to: process.env.USER,
     subject: 'New Message from Contact Form',
     text: content
   }

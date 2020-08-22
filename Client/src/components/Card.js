@@ -9,6 +9,7 @@ export default function Card({ title, description, github, url }) {
             <div className="card-header">
                 {title}
             </div>
+            <div className="header-line"></div>
             <div className="card-body">
                 <p>{`${description}`}</p>
             </div>

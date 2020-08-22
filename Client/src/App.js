@@ -7,11 +7,13 @@ import Knowledge from './screens/Knowledge';
 import Contact from './screens/Contact';
 import './App.css';
 import Test from './screens/Test';
+import Typewriter from './components/Typewriter';
 
 function App() {
   return (
     <>
       {/* <Test /> */}
+    {/* <Typewriter /> */}
       <Navbar />
       <Home />
       <About />

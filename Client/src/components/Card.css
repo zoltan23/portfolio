@@ -1,5 +1,5 @@
 .card {
-    background-color: var(--color2);
+    background-color: var(--color3);
     border-radius: 3px;
     height: auto;
     margin: 5px;
@@ -11,6 +11,18 @@
 .card-header {
     font-size: 35px;
     text-align: center;
+}
+
+.header-line {
+    margin-top: -30px;
+    height: 3px;
+    width: 100%;
+    background: red;
+}
+
+.card-body {
+    color: yellow;
+    position: relative;   
 }
 
 a {
@@ -25,11 +37,7 @@ a {
     color: purple;
 }
 
-.card-body {
-    color: yellow;
-    position: relative;
-    
-}
+
 
 .card-body p {
     line-height: 1.6;

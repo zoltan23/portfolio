@@ -8,6 +8,7 @@
 .center p {
   font-size: 35px;
   color: var(--color4);
+  padding-bottom: 80px;
 }
 
 span {

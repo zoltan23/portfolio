@@ -41,8 +41,7 @@
   @media(max-width: 476px) {
     #knowledge-container {
         height: auto;
-        overflow: visible;
-        
+        overflow: visible;     
     }
 
     .knowledge-grid {

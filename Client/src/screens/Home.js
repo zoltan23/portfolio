@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import Typewriter from '../components/Typewriter'
-import { Link, animateScroll as scroll } from "react-scroll/modules";
+import NavButton from '../components/NavButton';
 
 export default function Home() {
     return (
@@ -10,9 +10,9 @@ export default function Home() {
                 <p>
                     Welcome!  My name is <br />
                     <span>Tim Tassin</span><br />
-            <Typewriter str="Thank you for visiting my portfolio website!" />
-            </p>
-            <Link className="nav-item" to="about" activeClass="active" spy={true} smooth={true} duration={1000} offset={-60}>About</Link>
+                    <Typewriter str="Thank you for visiting my portfolio website!" />
+                </p>
+                <NavButton to="about" caption="Learn more about me!"/>
             </div>
         </section>
     )

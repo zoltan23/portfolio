@@ -4,7 +4,7 @@ import './About.css'
 export default function About() {
     return (
         <section id="about" className="img">
-            <div className="">
+            <div className="container">
             <div id="about-grid">
                 <div id="about-header"><h1>About Me</h1></div>
                 <div id="about-content1">

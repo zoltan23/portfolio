@@ -12,8 +12,6 @@ import Typewriter from './components/Typewriter';
 function App() {
   return (
     <>
-      {/* <Test /> */}
-    {/* <Typewriter /> */}
       <Navbar />
       <Home />
       <About />

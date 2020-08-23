@@ -1,0 +1,14 @@
+.link1 {
+    font-size: 50px;
+    background-color: var(--color1);
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.link1 span {
+    padding-left: 20px;
+    color: var(--color4);
+    height: 50%;
+}
+

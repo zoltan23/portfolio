@@ -19,6 +19,7 @@
 #about-header {
       grid-area: header;
       color: var(--color3);
+      padding-right: 15px;
   }
 
 #about-header h1 {

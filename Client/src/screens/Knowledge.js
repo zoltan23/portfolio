@@ -1,7 +1,7 @@
 import React from 'react'
-import './Knowledge.css'
 import InfoCard from '../components/InfoCard'
 import data from '../assets/skills_data.json'
+import './Knowledge.css'
 
 export default function Knowledge() {
    return (

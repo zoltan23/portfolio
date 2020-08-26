@@ -1,6 +1,5 @@
 #contact {
     display: grid;
-    /* height: 100%; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .3fr 3fr 1fr;
     grid-template-areas: 
@@ -69,12 +68,11 @@ input {
     box-sizing: border-box;
     background: transparent;
     font-size: var(--p-font-size);
-    color: var(--color3)
+    color: var(--color3);
+    
   }
 
- .input-val {
-     border: green 2px solid;
- } 
+
 
 input:last-of-type {
     margin-top: 30px;
@@ -83,6 +81,7 @@ input:last-of-type {
 form {
     width: 100%;
 }
+
 
 .contact-img {
     background: url('../assets/images/Contact-Form-background.jpg') no-repeat center center/cover;
@@ -133,9 +132,6 @@ form {
     color: var(--color3);
     padding: 10px;
 }
-
-
-
 
 @media only screen and (max-width: 550px){
     #contact {

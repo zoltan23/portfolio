@@ -4,6 +4,7 @@
     margin: 5px;
     padding: 5px 10px 5px 10px;
     height: 300px;
+    position: relative;
 }
 
 .card-header {
@@ -18,7 +19,6 @@
 }
 
 .card-body {
-    
     position: relative;   
 }
 
@@ -46,7 +46,8 @@ a {
 
 
 .links {
-   align-self: end;
+   position: absolute;
+   bottom: 0;
 }
 
 .links p {

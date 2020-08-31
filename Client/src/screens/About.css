@@ -46,7 +46,10 @@
   grid-area: footer;
   padding: var(--padding-left);
   padding-right: 15%;
+  display: flex;
   float: right;
+  justify-content: space-between;
+  align-items: center;
 }
 
 table {

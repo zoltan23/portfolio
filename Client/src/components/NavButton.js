@@ -9,3 +9,4 @@ export default function NavButton({to, caption}) {
         <Link  className="link1" to={to} activeClass="active" spy={true} smooth={true} duration={1000} offset={-60}>{caption}<span><FontAwesomeIcon icon={faArrowDown} /></span></Link>
     )
 }
+

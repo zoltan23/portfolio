@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import NavArrows from '../components/NavArrows'
 
 export default function About() {
     return (
@@ -32,6 +33,7 @@ export default function About() {
                             </tr>
                         </tbody>
                     </table>
+                    <NavArrows toUp="home" toDown="projects" captionDown="" captionUp=""/>
                 </footer>
             </div>
             </div>
